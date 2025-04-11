@@ -40,4 +40,6 @@ jobs:
           -e GITHUB_REF="${{github.ref}}" \
           -e GITHUB_SHA="${{github.sha}}" \
           -e WORKSPACE_PATH="/src" \
-          -v "${{ github.workspace }}":/src  "${{env.docker_tag}}"
+          -v "${{ github.workspace }}":/src  "${{env.docker_tag}}" 
+
+          
